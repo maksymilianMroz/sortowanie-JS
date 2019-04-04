@@ -1,0 +1,103 @@
+.container {
+    width: 1000px;
+    height: 500px;
+    border: 4px solid rgb(99, 224, 172);
+    display: flex;
+
+    [class^='item-'] {
+        height: 90%;
+        background: rgb(222, 253, 232);
+        margin-left: 30px;
+        margin-top: 2%;
+
+        .item__chart {
+            height: 90%;
+            position: relative;
+
+            .chart-height {
+                width: 90%;
+                background: rgb(25, 110, 64);
+                height: 30%;
+                position: absolute;
+                bottom: 0;
+                margin: 0 5%;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                transition: all 3s ease-in-out;
+
+                [class^='desc'] {
+                    color: #fff;
+                    font-size: 26px;
+                    text-shadow: 1px 2px 17px black;
+                }
+            }
+        }
+
+        [type='number'] {
+            height: 10%;
+            text-align: center;
+            text-transform: uppercase;
+            background: rgb(223, 233, 219);
+        }
+    }
+}
+
+.button-container {
+    width: 1008px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    #sort {
+        padding: 20px 40px;
+        background: rgb(133, 219, 133);
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+        flex-basis: 100%;
+
+        &:hover {
+            opacity: .9;
+        }
+    }
+
+    .btn-dsc {
+        color: green;
+        font-size: 14px;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
+
+// REORDER
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-4 {
+    order: 4;
+}
+
+.order-5 {
+    order: 5;
+}
+
+.order-6 {
+    order: 6;
+}
